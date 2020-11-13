@@ -1,0 +1,42 @@
+[debug] [2020-11-13T18:28:42.359Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T18:28:42.360Z] Command:       /usr/local/bin/firebase /Users/h.venkataramanappa/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase init
+[debug] [2020-11-13T18:28:42.360Z] CLI Version:   7.12.1
+[debug] [2020-11-13T18:28:42.360Z] Platform:      darwin
+[debug] [2020-11-13T18:28:42.361Z] Node Version:  v12.13.1
+[debug] [2020-11-13T18:28:42.361Z] Time:          Fri Nov 13 2020 23:58:42 GMT+0530 (India Standard Time)
+[debug] [2020-11-13T18:28:42.362Z] ----------------------------------------------------------------------
+[debug] [2020-11-13T18:28:42.362Z] 
+[debug] [2020-11-13T18:28:42.366Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-11-13T18:28:42.366Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/h.venkataramanappa/Documents/backup/invitation-website
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  If you want to create a project in a Google Cloud organization or folder, please use "firebase projects:create" instead, and return to this command when you've created the project.
+[debug] [2020-11-13T18:29:49.465Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects  
+
+[debug] [2020-11-13T18:30:04.486Z] Server Error. ETIMEDOUT
+[debug] [2020-11-13T18:30:04.880Z] FirebaseError: Server Error. ETIMEDOUT
+    at Request._callback (/Users/h.venkataramanappa/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/api.js:30:31)
+    at self.callback (/Users/h.venkataramanappa/.cache/firebase/tools/lib/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:210:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Timeout._onTimeout (/Users/h.venkataramanappa/.cache/firebase/tools/lib/node_modules/request/request.js:852:16)
+    at listOnTimeout (internal/timers.js:531:17)
+    at processTimers (internal/timers.js:475:7)
+[error] 
+[error] Error: Failed to create Google Cloud project. See firebase-debug.log for more info.

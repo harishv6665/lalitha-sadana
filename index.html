@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Tangerine:700" rel="stylesheet">
+  <title>House warming -- Lalitha Sadana</title>
+
+  <link rel="stylesheet" type="text/css" href="./styles/jquery.fullpage.min.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+  <link rel="stylesheet" type="text/css" href="./styles/home.css" />
+  <!--[if IE]>
+  <script type="text/javascript">
+    var console = { log: function () {} };
+  </script>
+  <![endif]-->
+
+  <script type="text/javascript" src="./scripts/countdown.min.js"></script>
+  <script type="text/javascript" src="./scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="./scripts/jquery-ui.min.js"></script>
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+  <!--<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
+
+  <script type="text/javascript" src="./scripts/scrolloverflow.min.js"></script>
+
+  <script type="text/javascript" src="./scripts/jquery.fullpage.min.js"></script>
+  <script type="text/javascript"
+          src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.jquery.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('#fullpage').fullpage({
+        anchors: ['what', 'who', 'where', 'us', 'save', 'welcome'],
+      });
+
+      // var tdy = new Date(2017, 10, 02, 05, 30);
+      var tdy = new Date(2020, 10, 20, 6, 35);
+      var daysEl = document.querySelector('#cd-days');
+      var hoursEl = document.querySelector('#cd-hours');
+      var minsEl = document.querySelector('#cd-mins');
+      var secEl = document.querySelector('#cd-sec');
+
+
+      setInterval(function () {
+        var value = countdown(tdy);
+        daysEl.innerHTML = -Math.ceil(value.value / (1000 * 60 * 60 * 24));
+        hoursEl.innerHTML = value.hours;
+        minsEl.innerHTML = value.minutes;
+        secEl.innerHTML = value.seconds;
+      }, 1000);
+
+    });
+  </script>
+
+</head>
+<body>
+
+<div id="fullpage">
+  <!--<audio id="my_audio" src="FinalBGMusic.MP3" loop="loop" preload="auto" autoPlay></audio>-->
+  <embed src="FinalBGMusic.MP3" AutoPlay="false" loop hidden>
+
+  <div id="snowfall"></div>
+  <div class="section " id="section0">
+    <!-- <video controls="" name="media" autoplay><source src="http://www.innocentiquartet.com/rondeau.mp3" type="audio/mpeg"></video> -->
+    <h1 class="hero-title">HOUSE WARMING</h1>
+    <h4 class="hero-date">on 20th November 2020
+      <h1 id="countdown-holder"></h1>
+      <!--<div id="basicUsage">00:00:00</div>-->
+    </h4>
+    <ul class="countdown__wrapper clearfix">
+
+      <li class="countdown__box">
+        <div class="countdown__box__number">
+          <span class="countdown__box__number__text" id="cd-days"></span>
+        </div>
+        <span class="countdown__box__label">DAYS</span>
+      </li>
+
+      <li class="countdown__box">
+        <div class="countdown__box__number">
+          <span class="countdown__box__number__text" id="cd-hours"></span>
+        </div>
+        <span class="countdown__box__label">HOURS</span>
+      </li>
+
+      <li class="countdown__box">
+        <div class="countdown__box__number">
+          <span class="countdown__box__number__text" id="cd-mins"></span>
+        </div>
+        <span class="countdown__box__label">MINS</span>
+      </li>
+
+      <li class="countdown__box">
+        <div class="countdown__box__number">
+          <span class="countdown__box__number__text" id="cd-sec"></span>
+        </div>
+        <span class="countdown__box__label">SEC</span>
+      </li>
+
+    </ul>
+
+    <span class="hero-placeholder">Till our big day!</span>
+
+    <a href="#who" class="scroll-down"><span></span>Scroll</a>
+
+  </div>
+  <div class="section" id="section1">
+    <p class="content-text lift-top" style="line-height: normal; max-width: 780px; margin: auto;">
+        <span class="highlight">Lalitha Sadana</span>
+        <br>
+        <br>
+        A house of bricks and wood is not a home until our loved one’s step foot on it. Please bring your blessings for us. We have arranged a small housewarming ceremony for you!
+    </p>
+    <!-- <div class="content-placeholder lift-top"></div>
+    <div class="bride-groom" style="display: none;">
+      <div class="bride-groom__photo boy"></div>
+      <div class="bride-groom__placeholder"></div>
+      <div class="bride-groom__photo girl"></div>
+    </div> -->
+    <!-- <p class="content-text">
+        We together with our parents invite you to share the beginning of our lives
+    </p> -->
+  </div>
+  <div class="section" id="section2">
+    <h3 class="events-headding">OUR BIG DAY</h3>
+    <div class="events-wrapper">
+      <p class="events-detail">
+        <span class="events-detail__title">HOUSE WARMING :</span>
+        <span class="events-detail__text">20th November, 2020</span>
+        <span class="events-detail__small- text">Time: 6.35 am - 10.21 am</span>
+        <span class="events-detail__small- text">Lunch: 12:30 pm</span>
+      </p>
+      <!-- <div class="events-separator"></div>
+      <p class="events-detail">
+        <span class="events-detail__title">MUHURTHAM :</span>
+        <span class="events-detail__text">13th May, 2019</span>
+        <span class="events-detail__small- text">9:25 am - 9:59 am</span>
+      </p> -->
+    </div>
+    <div class="events-placeholder-img"></div>
+    <p class="events-venue">
+      <span class="events-venue__sub-title">Venue:</span>
+      <span class="events-venue__sub-title">Bakkeshwara kalyana mantapa</span>
+      <span class="events-venue__text">SS High-tech Layout, Davangere, Karnataka - 577004</span>
+      <!-- <a class="events-venue__maps"
+         target="_blank"
+         href="https://goo.gl/maps/u4ckuNZRpKA2">GET DIRECTIONS</a> -->
+    </p>
+  </div>
+  <div class="section" id="section3">
+    <div class="collage--new1 collage-wrapper">
+      <img src="./images/collage-bw-1.jpg" class="collage-hd" />
+    </div>
+  </div>
+  <!-- <div class="section" id="section4">
+    <div
+      class="collage--new1 save-date-wrapper"
+    >
+      <div class="save-date-image">
+        <div class='save-date-image__board'></div>
+      </div>
+    </div>
+    <div class="collage--desktop"></div>
+    <div class="collage--mobile"></div>
+  </div> -->
+  <!--<div class="section" id="section5">-->
+  <!--<div-->
+  <!--class="collage&#45;&#45;new1 welcome-text"-->
+  <!--style="text-align: center;font-size: 4vw;font-weight: 800;letter-spacing: 1px;">-->
+  <!--<canvas id="canvas" class="fw-canvas">Canvas is not supported in your browser.</canvas>-->
+  <!--ALL ARE WELCOME-->
+  <!--&lt;!&ndash;<div class="powered-by">Powered by <img src="./image.svg" height="30px"/></div>&ndash;&gt;-->
+  <!--</div>-->
+  <!--&lt;!&ndash;<div class="collage&#45;&#45;desktop"></div>&ndash;&gt;-->
+  <!--&lt;!&ndash;<div class="collage&#45;&#45;mobile"></div>&ndash;&gt;-->
+  <!--</div>-->
+
+</div>
+<script defer type="text/javascript" src="./scripts/custom.js"></script>
+<script defer type="text/javascript" src="./scripts/fireworks.js"></script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.0.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.0.2/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>
